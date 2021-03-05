@@ -87,7 +87,7 @@ function App() {
     <Router>
       <Container className="App" >
         <Header>
-          <DivLogo><ImgLogo></ImgLogo>Agencia 2B</DivLogo>
+          <DivLogo><ImgLogo/>Agencia 2B</DivLogo>
           <Nav><ImgMenu onClick={()=>menuOpen()}/></Nav>
         </Header>
         <Home/>
