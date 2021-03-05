@@ -1,8 +1,14 @@
 import React from 'react';
+import {Switch,Route} from 'react-router-dom';
 
 const Home = () => {
     return (
-        <h1>Features</h1>
+        <Switch>
+        <Route exact path='/'>
+            <h1>Home</h1>
+        </Route>
+        </Switch>
+        
     )
 }
 

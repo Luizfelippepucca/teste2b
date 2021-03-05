@@ -7,12 +7,16 @@ import {Switch,Route} from 'react-router-dom';
 
 
 
+
+
 const Navegation = (props)=>{
     return (
        <div className='rotas'>
            
            <Switch>
-                <Route  path='/' ><Features click2={props.click} ></Features><Support click4={props.click}></Support><Blog click3={props.click}></Blog></Route>
+                <Route exact path='/' ><Features click2={props.click} ></Features><Support click4={props.click}></Support><Blog click3={props.click}></Blog></Route>
+                <Route exact path='/Support' ><Features click2={props.click} ></Features><Support click4={props.click}></Support><Blog click3={props.click}></Blog></Route>
+                <Route exact path='/Blog' ><Features click2={props.click} ></Features><Support click4={props.click}></Support><Blog click3={props.click}></Blog></Route>
             </Switch>
           
        </div>

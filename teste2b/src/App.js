@@ -5,6 +5,9 @@ import {FingerPrint} from '@styled-icons/ionicons-outline/FingerPrint';
 import {CloseCircle} from '@styled-icons/ionicons-sharp/CloseCircle';
 import Navegation from './rotas/Navegacao';
 import  { BrowserRouter as Router} from 'react-router-dom';
+import Home from './components/Home';
+import Blog from './components/BlogComp';
+import Suport from './components/SuportComp';
 
 const Container = styled.div`
  width:100%;
@@ -76,7 +79,7 @@ function App() {
 
   const menuClose = ()=>{
     setMenuOpened(true);
-    console.log('clicou');
+   
   }
 
  
@@ -87,6 +90,9 @@ function App() {
           <DivLogo><ImgLogo></ImgLogo>Agencia 2B</DivLogo>
           <Nav><ImgMenu onClick={()=>menuOpen()}/></Nav>
         </Header>
+        <Home/>
+        <Suport/>
+        <Blog/>
        {MenuOpened?'':
         <Modal>
           <ImgMenu2 onClick={()=>menuClose()}/>

@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const Features = (props)=>{
     return (
        
-          <Link to='/'  onClick={props.click2}>Features</Link>
+          <Link to='/'  onClick={props.click2}>Home</Link>
       
     )
 }

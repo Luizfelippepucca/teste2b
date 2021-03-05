@@ -1,8 +1,13 @@
 import React from 'react';
+import {Switch,Route} from 'react-router-dom';
 
 const SupportComp = () => {
     return (
-        <h1>Support</h1>
+        <Switch>
+        <Route exact path='/Support'>
+            <h1>Support</h1>
+        </Route>
+        </Switch>
     )
 }
 
