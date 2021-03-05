@@ -1,6 +1,10 @@
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import {Menu} from '@styled-icons/ionicons-solid/Menu';
 import {FingerPrint} from '@styled-icons/ionicons-outline/FingerPrint';
+import {CloseCircle} from '@styled-icons/ionicons-sharp/CloseCircle';
+import Navegation from './rotas/Navegacao';
+import  { BrowserRouter as Router} from 'react-router-dom';
 
 const Container = styled.div`
  width:100%;
@@ -40,15 +44,59 @@ color:black;
 width:40px;
 cursor:pointer;
 `
-
+const Modal = styled.div`
+width:100%;
+height:100vh;
+background-color:yellow;
+position:absolute;
+z-index:1;
+top:0px;
+`
+const ImgMenu2 = styled(CloseCircle)`
+color:black;
+width:30px;
+heigth:auto;
+cursor:pointer;
+float:right;
+margin-top 5px;
+margin-right: 10px;
+transform:scale(1);
+transition: all 0.5s;
+&:hover{
+  transform:scale(1.1); 
+}
+` 
 function App() {  
+  const [MenuOpened,setMenuOpened] = useState(true);
+  
+  const menuOpen = ()=>{
+    
+    setMenuOpened(false);
+  };
+
+  const menuClose = ()=>{
+    setMenuOpened(true);
+    console.log('clicou');
+  }
+
+ 
   return (
-    <Container className="App" >
-     <Header>
-       <DivLogo><ImgLogo></ImgLogo>Agencia 2B</DivLogo>
-       <Nav><ImgMenu></ImgMenu></Nav>
-     </Header>
-    </Container>
+    <Router>
+      <Container className="App" >
+        <Header>
+          <DivLogo><ImgLogo></ImgLogo>Agencia 2B</DivLogo>
+          <Nav><ImgMenu onClick={()=>menuOpen()}/></Nav>
+        </Header>
+       {MenuOpened?'':
+        <Modal>
+          <ImgMenu2 onClick={()=>menuClose()}/>
+          
+            <Navegation click={()=>menuClose()}/>
+            
+        </Modal>}
+      
+      </Container>
+    </Router>
   );
 }
 
