@@ -28,4 +28,14 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    
+}
+.slider div.slide{
+    opacity: 1;
+  
+  
+}
+
+.slider div.selected{
+    opacity: 0;
 }

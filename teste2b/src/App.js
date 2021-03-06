@@ -71,7 +71,9 @@ transition: all 0.5s;
 ` 
 function App() {  
   const [MenuOpened,setMenuOpened] = useState(true);
-  
+
+ 
+       
   const menuOpen = ()=>{
     
     setMenuOpened(false);
