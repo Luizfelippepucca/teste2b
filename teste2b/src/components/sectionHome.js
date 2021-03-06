@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Mobile2} from 'styled-icons';
+
 
 const Section = styled.section`
 width:100%;
