@@ -18,6 +18,8 @@ const Header = styled.header`
   height:100px;
   background-color: #fddb00;
   display: flex;
+  position:fixed;
+  z-index:1;
  
 ` 
 const DivLogo =styled.div`
