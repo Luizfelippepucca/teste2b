@@ -18,8 +18,7 @@ const Header = styled.header`
   height:100px;
   background-color: #fddb00;
   display: flex;
-  position:fixed;
-  z-index:1;
+  
  
 ` 
 const DivLogo =styled.div`
@@ -51,7 +50,7 @@ cursor:pointer;
 `
 const Modal = styled.div`
 width:100%;
-height:100vh;
+height:100%;
 background-color:yellow;
 position:absolute;
 z-index:1;

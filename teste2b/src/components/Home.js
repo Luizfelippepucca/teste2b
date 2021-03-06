@@ -9,26 +9,27 @@ import '../style/style.css';
 import Logo from '../img/apple.png';
 import Logo2 from '../img/windows.png';
 import Logo3 from '../img/linux.png';
+
 const ContSlide = styled.section`
 width: 100%;
 height: 500px;
 background-color: #fddb00;
-padding-top:100px;
+
 ` 
 const ImgApple = styled(Apple)`
 color: black;
 width:50px;
-cursor:pointer;
+
 ` 
 const ImgWindows = styled(Windows)`
 color: black;
 width:50px;
-cursor:pointer;
+
 `
 const ImgLinux = styled(Linux)`
 color: black;
 width:40px;
-cursor:pointer;
+
 `
 
 const Tablet =  styled.li`
