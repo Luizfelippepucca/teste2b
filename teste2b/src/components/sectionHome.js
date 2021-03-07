@@ -58,7 +58,6 @@ display:flex;
 transition: all 0.3s;
 transform:scale(0.9);
 &:hover{
-    border:1px solid yellow;
     transform:scale(1);
     box-shadow: -5px 15px 20px grey;
   }
@@ -111,19 +110,31 @@ background-color:transparent;
 
 `
 
-const SectionHome = () =>{
+const styleSection={
+  backgroundColor:'black',
+  color:'white',
+}
+const styleSection2={
+  backgroundColor:'white',
+  color:'black',
+}
+
+
+
+const SectionHome = (props) =>{
  return (
-     <Section className="sectionHome">
-        <SectionTitle>Agência 2B features</SectionTitle>
-        <SectionText>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</SectionText>
-        <SectionCards><CardsLeft><IconMobile/></CardsLeft><CardsRight><h3>Fully Responsive</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></CardsRight></SectionCards>
-        <SectionCards><CardsLeft><IconLemon/></CardsLeft><CardsRight><h3>Fully Layered PSD</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></CardsRight></SectionCards>
-        <SectionCards><CardsLeft><IconFolder/></CardsLeft><CardsRight><h3>Styled Icons</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></CardsRight></SectionCards>
-        <SectionCards><CardsLeft><IconReact/></CardsLeft><CardsRight><h3>React JS</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></CardsRight></SectionCards>
-        <SectionCards><CardsLeft><IconMail/></CardsLeft><CardsRight><h3>Email Teamplate</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></CardsRight></SectionCards>
-        <SectionCards><CardsLeft><IconDown/></CardsLeft><CardsRight><h3>Free To Download</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></CardsRight></SectionCards>
+      
+     <Section className="sectionHome"  style={props.theme?styleSection:styleSection2}>
+        <SectionTitle style={props.theme?styleSection:styleSection2}>Agência 2B features</SectionTitle>
+        <SectionText  style={props.theme?styleSection:styleSection2}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</SectionText>
+        <SectionCards style={props.theme?styleSection:styleSection2}><CardsLeft><IconMobile/></CardsLeft><CardsRight><h3>Fully Responsive</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></CardsRight></SectionCards>
+        <SectionCards style={props.theme?styleSection:styleSection2}><CardsLeft><IconLemon/></CardsLeft><CardsRight><h3>Fully Layered PSD</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></CardsRight></SectionCards>
+        <SectionCards style={props.theme?styleSection:styleSection2}><CardsLeft><IconFolder/></CardsLeft><CardsRight><h3>Styled Icons</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></CardsRight></SectionCards>
+        <SectionCards style={props.theme?styleSection:styleSection2}><CardsLeft><IconReact/></CardsLeft><CardsRight><h3>React JS</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></CardsRight></SectionCards>
+        <SectionCards style={props.theme?styleSection:styleSection2}><CardsLeft><IconMail/></CardsLeft><CardsRight><h3>Email Teamplate</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></CardsRight></SectionCards>
+        <SectionCards style={props.theme?styleSection:styleSection2}><CardsLeft><IconDown/></CardsLeft><CardsRight><h3>Free To Download</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></CardsRight></SectionCards>
      </Section>
- 
+    
  )
 }
 

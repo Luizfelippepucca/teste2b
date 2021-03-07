@@ -88,9 +88,15 @@ transition: all 0.5s;
   width:40px;
 }
 ` 
+const styleH = {
+  backgroundColor:'black',
+  color:'yellow',
+}
 function App() {  
   const [MenuOpened,setMenuOpened] = useState(true);
 
+  const [DarkTheme, setDarkTheme] = useState(false);
+  const lightTheme = !DarkTheme;
  
        
   const menuOpen = ()=>{
@@ -103,25 +109,49 @@ function App() {
    
   }
 
+  const changeTheme = ()=>{
+    setDarkTheme(lightTheme); 
+    
+  }
+
  
   return (
     <Router>
       <Container className="App" >
-        <Header>
-          <DivLogo><ImgLogo/><TitleLogo>Agencia 2B</TitleLogo></DivLogo>
-          <Nav ><ImgMenu onClick={()=>menuOpen()} className='imgMenu'/></Nav>
-        </Header>
-        <Home/>
+        {DarkTheme?
+          <Header style={styleH}>
+            <DivLogo><ImgLogo onClick={()=>changeTheme()} style={styleH}/><TitleLogo>Agencia 2B</TitleLogo></DivLogo>
+            <Nav ><ImgMenu onClick={()=>menuOpen()} className='imgMenu' style={styleH}/></Nav>
+          </Header>:
+          <Header>
+            <DivLogo><ImgLogo onClick={()=>changeTheme()}/><TitleLogo>Agencia 2B</TitleLogo></DivLogo>
+            <Nav ><ImgMenu onClick={()=>menuOpen()} className='imgMenu'/></Nav>
+          </Header>
+        }
+        <Home  theme={DarkTheme}/>
         <Suport/>
         <Blog/>
-       {MenuOpened?'':
-        <Modal>
-          <ImgMenu2 onClick={()=>menuClose()}/>
-          
-            <Navegation click={()=>menuClose()}/>
-            
-        </Modal>}
-      
+        {DarkTheme?
+         <>
+         {MenuOpened?'':
+            <Modal style={styleH}>
+              <ImgMenu2 onClick={()=>menuClose()} style={styleH}/>
+              
+                <Navegation click={()=>menuClose() } />
+                
+            </Modal>
+          }</>:
+          <>
+            {MenuOpened?'':
+              <Modal>
+                <ImgMenu2 onClick={()=>menuClose()}/>
+                
+                  <Navegation click={()=>menuClose()}/>
+                  
+              </Modal>}
+          </>
+        }
+           
       </Container>
     </Router>
   );

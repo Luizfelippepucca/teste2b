@@ -120,8 +120,22 @@ const ImgSlider = styled.img`
  margin-left:auto;
  margin:left:auto;
 ` 
+const styleH = {
+    backgroundColor:'black',
+    color:'#fddb00',
+}
 
-const Home = () => {
+const styleImgH={
+    color:'#fddb00',
+}
+
+const styleTablet={
+    backgroundColor:'white'
+}
+const styleContTablet={
+    backgroundColor:'black'
+}
+const Home = (props) => {
     
 
     const[Images,setImages] = useState([
@@ -130,7 +144,8 @@ const Home = () => {
           
             img:Logo,
             id:1,
-            description:'Imagem1'
+            description:'Imagem1',
+            
             
            
         },
@@ -138,20 +153,22 @@ const Home = () => {
           
             img:Logo2,
             id:2,
-            description:'Imagem2'
+            description:'Imagem2',
+            
         },
 
         {
             img:Logo3,
             id:3,
             description:'Imagem3'
+            
         }
 
     ]);
 
     let[Current,setCurrent]= useState(0);
       
-    const endItem = Images.map(item => <Tablet  key={item.id} ><ContTablet><ImgSlider src={item.img}  alt={item.description}/></ContTablet></Tablet>);
+    const endItem = Images.map(item =><Tablet  key={item.id} style={props.theme?styleTablet:styleContTablet}><ContTablet style={props.theme?styleContTablet:styleTablet}><ImgSlider src={item.img}  alt={item.description}/></ContTablet></Tablet>);
     
     const transitionImg = () =>{ 
         setInterval(()=>{
@@ -182,6 +199,28 @@ const Home = () => {
     return (
         <Switch>
             <Route exact path='/'>
+                {props.theme? 
+                    <ContSlide style={styleH}>
+                        <ul className='slider' style={styleH}>
+                            {endItem}
+                       </ul>
+                       <DivTextLeft style={styleH}>
+                            <TitleDivLeft style={styleH}>
+                                Inspire your inspiration
+                            </TitleDivLeft>
+                            <ParagraphDivLeft style={styleH}>
+                                Simple to use for app,products showcase and your inspiration
+                            </ParagraphDivLeft>
+                            <ParagraphDivLeft2>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                            </ParagraphDivLeft2>
+                    </DivTextLeft>
+                    <DivImgs>
+                            <ImgApple style={styleImgH} />
+                            <ImgWindows style={styleImgH}/>
+                            <ImgLinux style={styleImgH}/>
+                        </DivImgs>
+                    </ContSlide>:
                 <ContSlide >
                     <ul className='slider'>
                        {endItem}
@@ -202,9 +241,9 @@ const Home = () => {
                             <ImgWindows />
                             <ImgLinux />
                         </DivImgs>
-                </ContSlide>
-               <SectionHome/>
-               <FooterHome/>
+                </ContSlide>}
+               <SectionHome theme={props.theme}/>
+               <FooterHome />
             </Route>
         </Switch>
         

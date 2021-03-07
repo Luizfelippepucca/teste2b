@@ -9,7 +9,7 @@ const Footer = styled.footer`
 width:100%;
 height:600px;
 background-color:black;
-margin-top:20px;
+padding-top:10px;
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -162,7 +162,7 @@ text-tranform:inherit;
     margin-top:-40px;
    }
 `
-const FooterHome = ()=>{
+const FooterHome = (props)=>{
 return(
     <Footer>
         <TitleFooter>Keep in touch with us</TitleFooter>
