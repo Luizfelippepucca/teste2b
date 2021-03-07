@@ -9,6 +9,7 @@ import '../style/style.css';
 import Logo from '../img/apple.png';
 import Logo2 from '../img/windows.png';
 import Logo3 from '../img/linux.png';
+import FooterHome from '../components/Rodape';
 
 const ContSlide = styled.section`
 width: 100%;
@@ -74,10 +75,8 @@ const ImgSlider = styled.img`
  margin:left:auto;
 ` 
 
-
-
-
 const Home = () => {
+    
 
     const[Images,setImages] = useState([
 
@@ -148,6 +147,7 @@ const Home = () => {
                         </DivImgs>
                 </ContSlide>
                <SectionHome/>
+               <FooterHome/>
             </Route>
         </Switch>
         
