@@ -24,7 +24,7 @@ execute o comando npm start.
 ![](react8.png) ![](react9.png)
 
 ### Funcionalidades:
-![check](https://user-images.githubusercontent.com/52139246/97097190-6f908580-164c-11eb-970d-97f8f141a690.png) DarkTheme(para mudar o tema clique no icone em formato de digital<br>
+![check](https://user-images.githubusercontent.com/52139246/97097190-6f908580-164c-11eb-970d-97f8f141a690.png) DarkTheme.(Para mudar o tema clique no icone em formato de digital)<br>
 
 ![](react7.png)
 
