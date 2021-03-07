@@ -21,10 +21,11 @@ execute o comando npm start.
 ### Metodologia<br>
 ![check](https://user-images.githubusercontent.com/52139246/97096897-3d315900-1649-11eb-8cc2-5f8cfcfd1532.png) Mobile first<br>
 
-![](react8.png) ![](react8.png)
+![](react8.png) ![](react9.png)
 
 ### Funcionalidades:
 ![check](https://user-images.githubusercontent.com/52139246/97097190-6f908580-164c-11eb-970d-97f8f141a690.png) DarkTheme<br>
+
 ![](react7.png)
 
 ![check](https://user-images.githubusercontent.com/52139246/97097190-6f908580-164c-11eb-970d-97f8f141a690.png) Transição de imagens feito  na mão.<br>
