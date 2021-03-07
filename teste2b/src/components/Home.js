@@ -83,7 +83,7 @@ margin-top:10px;
    margin-right:280px;
   }
   @media(min-width: 1920px){
-    margin-right:319px;
+    margin-right:290px;
      }
  
 `

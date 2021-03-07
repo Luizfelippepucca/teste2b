@@ -29,7 +29,7 @@ const DivLogo =styled.div`
   justify-content:space-evenly;
   text-transform:uppercase;
   @media(min-width: 1920px){
-    padding-left:286px;
+    padding-left:250px;
     width:50%;
   }
  

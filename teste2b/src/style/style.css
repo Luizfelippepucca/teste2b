@@ -96,3 +96,9 @@ footer  .pfooter{
         width:490px;
     }
    }
+
+   @media ( min-width:1920px){
+    .slider{
+        width:590px;
+    }
+   }
