@@ -4,8 +4,9 @@ Projeto para vaga de Desenvolvedor Junior
 ## Instruções<br>
 
 Para rodar o projeto  baixe ou clone ou repositório para sua máquina,<br>
-
-
+abra seu editor de código Vscode e dentro dele abra a pasta teste2b.<br>
+Abra seu terminal em new terminal dentro do Vscode e navegue até a pasta teste2b,<br>
+execute o comando npm start.
 
 ### Layout Responsivo:
 ![check](https://user-images.githubusercontent.com/52139246/97096897-3d315900-1649-11eb-8cc2-5f8cfcfd1532.png) Telas Mobile<br>
