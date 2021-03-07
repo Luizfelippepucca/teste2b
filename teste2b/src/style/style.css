@@ -72,3 +72,27 @@ footer  .pfooter{
        
     }
   }
+  @media(min-width:1024px){
+    footer div.finalfooter{
+        align-items: flex-start;
+    }
+}
+
+
+
+@media(min-width: 1440px){
+    footer div.finalfooter{
+       margin-top:-150px;
+       justify-content:space-between;
+       flex-direction:row;
+       margin-left:100px;
+    }
+
+    footer div.finalfooter span{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .slider{
+        width:490px;
+    }
+   }

@@ -33,6 +33,10 @@ font-size: 25px;
   grid-column-start:1;
   grid-column-end:3;
 }
+@media(min-width:1024px){
+  grid-column-start:1;
+  grid-column-end:4;
+}
 
 `
 const SectionText = styled.p`
@@ -47,6 +51,10 @@ font-weight:300;
 @media(min-width: 768px){
   grid-column-start:1;
   grid-column-end:3;
+}
+@media(min-width:1024px){
+  grid-column-start:1;
+  grid-column-end:4;
 }
 `
 const SectionCards = styled.div`

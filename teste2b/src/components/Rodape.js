@@ -33,6 +33,12 @@ text-align:center;
    margin-left:auto;
    margin-right:auto;
   }
+  @media(min-width: 1440px){
+    grid-column-start:1;
+    grid-column-end:4;
+    margin-left:auto;
+    margin-right:auto;
+   }
 
 `
 const TextFooter = styled.p`
@@ -44,6 +50,12 @@ text-align:center;
 @media(min-width: 768px){
     grid-column-start:1;
     grid-column-end:3;
+    margin-left:auto;
+    margin-right:auto;
+   }
+   @media(min-width: 1440px){
+    grid-column-start:1;
+    grid-column-end:4;
     margin-left:auto;
     margin-right:auto;
    }
@@ -59,6 +71,12 @@ margin-top:30px;
 @media(min-width: 768px){
     grid-column-start:1;
     grid-column-end:3;
+    margin-left:auto;
+    margin-right:auto;
+   }
+   @media(min-width: 1440px){
+    grid-column-start:1;
+    grid-column-end:4;
     margin-left:auto;
     margin-right:auto;
    }
@@ -142,8 +160,17 @@ text-tranform:inherit;
 @media(min-width: 768px){
     grid-column-start:1;
     grid-column-end:2;
+   }
+   @media(min-width: 1440px){
+    grid-column-start:1;
+    grid-column-end:4;
     
    }
+   @media(min-width: 1920px){
+    padding-left:150px;
+   
+  }
+   
 `
 const FinalFooter2 = styled.div`
 width:100%;
@@ -161,8 +188,14 @@ text-tranform:inherit;
     grid-column-end:3;
     margin-top:-40px;
    }
+   @media(min-width: 1440px){
+    grid-column-start:2;
+    grid-column-end:2;
+    
+   }
+   
 `
-const FooterHome = (props)=>{
+const FooterHome = ()=>{
 return(
     <Footer>
         <TitleFooter>Keep in touch with us</TitleFooter>

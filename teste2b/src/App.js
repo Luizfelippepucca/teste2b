@@ -18,7 +18,7 @@ const Header = styled.header`
   height:100px;
   background-color: #fddb00;
   display: flex;
- 
+  
 ` 
 const DivLogo =styled.div`
   width:70%;
@@ -28,7 +28,10 @@ const DivLogo =styled.div`
   align-items:center;
   justify-content:space-evenly;
   text-transform:uppercase;
-  
+  @media(min-width: 1920px){
+    padding-left:286px;
+    width:50%;
+  }
  
 `
 
@@ -37,6 +40,10 @@ font-size:25px;
 @media(min-width: 768px){
   font-size:30px;
   margin-left:-20%;
+ }
+ @media(min-width: 1440px){
+  margin-right: 10%;
+  margin-left:-30%;
  }
 
 `
@@ -47,10 +54,14 @@ background-color: transparent;
 display:flex;
 align-items:center;
 justify-content:center;
+@media(min-width: 1440px){
+ justify-content:flex-start;
+ }
 `
 const ImgLogo = styled(FingerPrint)`
 color:black;
 width:40px;
+cursor:pointer;
 @media(min-width: 768px){
   width:50px;
 }

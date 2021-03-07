@@ -20,6 +20,7 @@ background-color: #fddb00;
     grid-teamplate-cloumns: 1fr 1fr;
     grid-teamplate-rows: 200px 200px 200px;
   }
+ 
 ` 
 const ImgApple = styled(Apple)`
 color: black;
@@ -46,6 +47,10 @@ const Tablet =  styled.li`
  margin-right:auto;
  margin-top:10px;
  position:absolute;
+ @media(min-width: 1440px){
+    margin-left:-40px;
+   }
+
 
 ` 
 const ContTablet = styled.div `
@@ -74,6 +79,13 @@ margin-top:10px;
    grid-row-start:1;
  
   }
+  @media(min-width: 1440px){
+   margin-right:280px;
+  }
+  @media(min-width: 1920px){
+    margin-right:319px;
+     }
+ 
 `
 const DivTextLeft = styled.div`
 width:100px;
@@ -90,6 +102,15 @@ display:none;
     grid-column-end:3;
     grid-row-start:1;
     margin-left:100px;
+  }
+  @media(min-width: 1024px){
+   margin-left:200px;
+ }
+ @media(min-width: 1440px){
+    margin-left:300px;
+  }
+  @media(min-width: 1920px){
+ grid-column-start:2;
   }
 `
 const TitleDivLeft =  styled.h4`
