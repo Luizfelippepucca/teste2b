@@ -21,7 +21,7 @@ execute o comando npm start.
 ![check](https://user-images.githubusercontent.com/52139246/97097190-6f908580-164c-11eb-970d-97f8f141a690.png) Transição de imagens feito  na mão.<br>
 ![check](https://user-images.githubusercontent.com/52139246/97097190-6f908580-164c-11eb-970d-97f8f141a690.png) Criação de rotas<br>
 ![check](https://user-images.githubusercontent.com/52139246/97097190-6f908580-164c-11eb-970d-97f8f141a690.png) Links das Rotas para exibir seu componente<br>
-![check](https://user-images.githubusercontent.com/52139246/97097190-6f908580-164c-11eb-970d-97f8f141a690.png) Quando clica no link, menu fecha e exibe o componente<br>
+![check](https://user-images.githubusercontent.com/52139246/97097190-6f908580-164c-11eb-970d-97f8f141a690.png) Quando clica no link, menu fecha e exibe o componente da sua respectiva rota<br>
 ![check](https://user-images.githubusercontent.com/52139246/97097190-6f908580-164c-11eb-970d-97f8f141a690.png) Abrir Menu<br>
 ![check](https://user-images.githubusercontent.com/52139246/97097190-6f908580-164c-11eb-970d-97f8f141a690.png) Fechar Menu
 
