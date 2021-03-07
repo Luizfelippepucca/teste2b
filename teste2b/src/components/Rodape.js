@@ -14,6 +14,11 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:space-evenly;
+@media(min-width: 768px){
+    display:grid;
+    grid-teamplate-cloumns: 1fr 1fr 1fr;
+    grid-teamplate-rows: 200px 200px 200px;
+  }
 `
 const TitleFooter = styled.h5`
 width:70%;
@@ -22,6 +27,12 @@ color:#fddb00;
 font-size:22px;
 font-weight:bold;
 text-align:center;
+@media(min-width: 768px){
+   grid-column-start:1;
+   grid-column-end:3;
+   margin-left:auto;
+   margin-right:auto;
+  }
 
 `
 const TextFooter = styled.p`
@@ -30,6 +41,12 @@ height:50px;
 color:grey;
 font-size:18px;
 text-align:center;
+@media(min-width: 768px){
+    grid-column-start:1;
+    grid-column-end:3;
+    margin-left:auto;
+    margin-right:auto;
+   }
 `
 const FormFooter = styled.form`
 width:80%;
@@ -39,6 +56,12 @@ align-items:center;
 justify-content:space-evenly;
 flex-direction:column;
 margin-top:30px;
+@media(min-width: 768px){
+    grid-column-start:1;
+    grid-column-end:3;
+    margin-left:auto;
+    margin-right:auto;
+   }
 `
 
 const InputForm = styled.input`
@@ -70,26 +93,40 @@ height:100px;
 display:flex;
 align-items:center;
 justify-content:space-around;
+@media(min-width: 768px){
+    grid-column-start:1;
+    grid-column-end:4;
+    margin-left:auto;
+    margin-right:auto;
+   }
 
 ` 
 
 const FaceIcon = styled(Facebook)`
 width:35px;
 color:#fddb00;
+transition:all 0.5s easy-in-out;
+&:hover{-webkit-box-reflect: below 2px linear-gradient(transparent,#000)};
 `
 const TwitterIcon = styled(TwitterSquare)`
 width:33px;
 color:#fddb00;
+transition:all 0.5s easy-in-out;
+&:hover{-webkit-box-reflect: below 2px linear-gradient(transparent,#000)};
 `
 
 const GoogleIcon = styled(SocialGooglePlus)`
 width:44px;
 color:#fddb00;
+transition:all 0.5s easy-in-out;
+&:hover{-webkit-box-reflect: below -5px linear-gradient(transparent,#000)};
 `
 
 const GitIcon = styled(GithubSquare)`
 width:35px;
 color:#fddb00;
+transition:all 0.5s easy-in-out;
+&:hover{-webkit-box-reflect: below 2px linear-gradient(transparent,#000)};
 `
 const FinalFooter = styled.div`
 width:100%;
@@ -102,6 +139,11 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-tranform:inherit;
+@media(min-width: 768px){
+    grid-column-start:1;
+    grid-column-end:2;
+    
+   }
 `
 const FinalFooter2 = styled.div`
 width:100%;
@@ -114,6 +156,11 @@ flex-direction:row;
 justify-content:flex;
 align-items:center;
 text-tranform:inherit;
+@media(min-width: 768px){
+    grid-column-start:2;
+    grid-column-end:3;
+    margin-top:-40px;
+   }
 `
 const FooterHome = ()=>{
 return(

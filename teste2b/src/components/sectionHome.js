@@ -15,6 +15,11 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
+@media(min-width: 768px){
+  display:grid;
+  grid-teamplate-cloumns: 1fr 1fr 1fr 1fr;
+  grid-teamplate-rows: 200px 200px 200px 200px;
+}
 `
 const SectionTitle = styled.h1`
 width:100%;
@@ -24,6 +29,11 @@ text-align:center;
 padding-top:50px;
 text-transform:capitalize;
 font-size: 25px;
+@media(min-width: 768px){
+  grid-column-start:1;
+  grid-column-end:3;
+}
+
 `
 const SectionText = styled.p`
 width:100%;
@@ -34,6 +44,10 @@ padding-top:15px;
 font-size:18px;
 color:black;
 font-weight:300;
+@media(min-width: 768px){
+  grid-column-start:1;
+  grid-column-end:3;
+}
 `
 const SectionCards = styled.div`
 width:270px;
@@ -47,7 +61,9 @@ transform:scale(0.9);
     border:1px solid yellow;
     transform:scale(1);
     box-shadow: -5px 15px 20px grey;
-  };
+  }
+  
+ 
 `
 const CardsLeft = styled.div `
 width:30%;

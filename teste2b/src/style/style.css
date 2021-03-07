@@ -65,3 +65,10 @@ footer  .pfooter{
     text-transform: uppercase;
     font-size: 15px;
 }
+
+@media(min-width: 768px){
+    .slider{
+        grid-column-start:3;
+       
+    }
+  }

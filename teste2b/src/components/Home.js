@@ -15,22 +15,23 @@ const ContSlide = styled.section`
 width: 100%;
 height: 500px;
 background-color: #fddb00;
-
+@media(min-width: 768px){
+    display:grid;
+    grid-teamplate-cloumns: 1fr 1fr;
+    grid-teamplate-rows: 200px 200px 200px;
+  }
 ` 
 const ImgApple = styled(Apple)`
 color: black;
 width:50px;
-
 ` 
 const ImgWindows = styled(Windows)`
 color: black;
 width:50px;
-
 `
 const ImgLinux = styled(Linux)`
 color: black;
 width:40px;
-
 `
 
 const Tablet =  styled.li`
@@ -44,7 +45,7 @@ const Tablet =  styled.li`
  margin-left:auto;
  margin-right:auto;
  margin-top:10px;
-position:absolute;
+ position:absolute;
 
 ` 
 const ContTablet = styled.div `
@@ -67,6 +68,51 @@ display:flex;
 align-tems:center;
 justify-content:space-evenly;
 margin-top:10px;
+@media(min-width: 768px){
+    grid-column-start:1;
+    grid-column-end:3;
+   grid-row-start:1;
+ 
+  }
+`
+const DivTextLeft = styled.div`
+width:100px;
+background-color:transparent;
+display:none;
+@media(min-width:768px){
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    width:300px;
+    height:200px;
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:1;
+    margin-left:100px;
+  }
+`
+const TitleDivLeft =  styled.h4`
+ width:80%;
+ height:50px;
+ color:black;
+ text-align:justify;
+ font-size: 22px;
+` 
+
+const ParagraphDivLeft = styled.p`
+width:80%;
+height:50px;
+text-align:justify;
+color:#434434;
+font-size:17px;
+`
+
+const ParagraphDivLeft2 = styled.p`
+width:80%;
+height:50px;
+text-align:justify;
+color:#817742;
 `
 const ImgSlider = styled.img`
  width:300px;
@@ -140,6 +186,17 @@ const Home = () => {
                     <ul className='slider'>
                        {endItem}
                     </ul>
+                    <DivTextLeft>
+                       <TitleDivLeft>
+                           Inspire your inspiration
+                       </TitleDivLeft>
+                       <ParagraphDivLeft>
+                           Simple to use for app,products showcase and your inspiration
+                       </ParagraphDivLeft>
+                       <ParagraphDivLeft2>
+                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                       </ParagraphDivLeft2>
+                    </DivTextLeft>
                         <DivImgs>
                             <ImgApple  />
                             <ImgWindows />

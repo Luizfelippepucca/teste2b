@@ -18,7 +18,6 @@ const Header = styled.header`
   height:100px;
   background-color: #fddb00;
   display: flex;
-  
  
 ` 
 const DivLogo =styled.div`
@@ -28,8 +27,18 @@ const DivLogo =styled.div`
   display:flex;
   align-items:center;
   justify-content:space-evenly;
-  font-size:25px;
   text-transform:uppercase;
+  
+ 
+`
+
+const TitleLogo = styled.p`
+font-size:25px;
+@media(min-width: 768px){
+  font-size:30px;
+  margin-left:-20%;
+ }
+
 `
 const Nav = styled.div `
 width:30%;
@@ -42,11 +51,17 @@ justify-content:center;
 const ImgLogo = styled(FingerPrint)`
 color:black;
 width:40px;
+@media(min-width: 768px){
+  width:50px;
+}
 `
 const ImgMenu = styled(Menu)`
 color:black;
 width:40px;
 cursor:pointer;
+@media(min-width: 768px){
+  width:50px;
+}
 `
 const Modal = styled.div`
 width:100%;
@@ -69,6 +84,9 @@ transition: all 0.5s;
 &:hover{
   transform:scale(1.1); 
 }
+@media(min-width: 768px){
+  width:40px;
+}
 ` 
 function App() {  
   const [MenuOpened,setMenuOpened] = useState(true);
@@ -90,8 +108,8 @@ function App() {
     <Router>
       <Container className="App" >
         <Header>
-          <DivLogo><ImgLogo/>Agencia 2B</DivLogo>
-          <Nav><ImgMenu onClick={()=>menuOpen()}/></Nav>
+          <DivLogo><ImgLogo/><TitleLogo>Agencia 2B</TitleLogo></DivLogo>
+          <Nav ><ImgMenu onClick={()=>menuOpen()} className='imgMenu'/></Nav>
         </Header>
         <Home/>
         <Suport/>
