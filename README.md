@@ -19,7 +19,8 @@ execute o comando npm start.
 ![check](https://user-images.githubusercontent.com/52139246/97096897-3d315900-1649-11eb-8cc2-5f8cfcfd1532.png) Telas 1920x1080<br>
 
 ### Metodologia<br>
-![check](https://user-images.githubusercontent.com/52139246/97096897-3d315900-1649-11eb-8cc2-5f8cfcfd1532.png) Mobile first
+![check](https://user-images.githubusercontent.com/52139246/97096897-3d315900-1649-11eb-8cc2-5f8cfcfd1532.png) Mobile first<br>
+
 ![](react8.png) ![](react8.png)
 
 ### Funcionalidades:
