@@ -145,10 +145,10 @@ function App() {
         {DarkTheme?
          <>
          {MenuOpened?'':
-            <Modal style={styleH}>
+            <Modal style={styleH} >
               <ImgMenu2 onClick={()=>menuClose()} style={styleH}/>
               
-                <Navegation click={()=>menuClose() } />
+                <Navegation click={()=>menuClose() }  theme={DarkTheme}/>
                 
             </Modal>
           }</>:
