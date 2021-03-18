@@ -1,5 +1,5 @@
 # Teste2b - Luiz Felippe Pucca
-Projeto para vaga de Desenvolvedor Junior
+Projeto para aprendizado e exoeriência.
 
 ## Instruções<br>
 Para rodar o projeto  baixe ou clone o repositório para sua máquina,<br>
